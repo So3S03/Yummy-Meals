@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="assets/nav icon1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!--start nav section -->
+    <nav class="d-flex">
+        <div class="side-Bar py-5">
+            <div class="naving">
+                <ul class="list-unstyled mx-auto w-75">
+                    <li class="fst"><a href="#">Search</a></li>
+                    <li class="sec"><a href="#">Categories</a></li>
+                    <li class="trd"><a href="#">Area</a></li>
+                    <li class="frt"><a href="#">Ingredients</a></li>
+                    <li class="fft"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="w-75 mx-auto">
+                <div class="icons mb-3">
+                    <i class="fa-brands fa-facebook fa-lg me-2"></i>
+                    <i class="fa-brands fa-twitter fa-lg me-2"></i>
+                    <i class="fa-solid fa-globe fa-lg"></i>
+                </div>
+                <p>Copyright Karim Fathy© 2024 All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+        <div class="nav-bar bg-body-tertiary py-3">
+            <div class="icon w-90 mx-auto">
+                <img src="assets/nav icon1.png" alt="pageIcon" class="w-100 home">
+            </div>
+            <div class="menu-btn mx-auto">
+                <span class="line top-line"></span>
+                <span class="line mid-line"></span>
+                <span class="line bottom-line"></span>
+            </div>
+            <div class="social-icons text-dark mx-auto">
+                <div class="w-100"><i class="fa-solid fa-globe fa-lg"></i></div>
+                <div class="w-100"><i class="fa-solid fa-share-nodes fa-lg"></i></div>
+            </div>
+        </div>
+    </nav>
+    <!--end nav section -->
+    <!-- start loading screen -->
+    <div class="loading">
+        <span class="loader"></span>
+    </div>
+    <!-- end loading screen -->
+    <!-- start main page -->
+    <!-- !!need modification -->
+    <div class="w-90 ms-auto py-5 pe-5 responsive">
+        <div class="w-100 d-flex justify-content-evenly flex-wrap mb-5 d-none" id="searching">
+            <input type="text" placeholder="Search By Name" class="form-control w-40 w-r-100" id="sByName">
+            <input type="text" placeholder="Search By First Letter" class="form-control w-40 w-r-100" maxlength="1"
+                id="sByLetter">
+        </div>
+        <!-- !!need modification -->
+        <div class="row g-3" id="showData">
+        </div>
+    </div>
+    <!-- start details section -->
+    <div class="details py-4 d-none z-r-99" id="showDet">
+    </div>
+    <!-- end details section -->
+    <!-- start contact section -->
+    <div class="w-100 d-flex justify-content-center flex-wrap d-none" id="contact">
+        <form class="w-60 d-flex justify-content-between flex-wrap">
+            <div class="w-48 w-r-100">
+                <input type="text" placeholder="Enter Your Name" class="form-control w-100 mb-2 inputs" id="nameInp">
+                <p class="alert alert-danger w-100 d-none" id="nameAlert">Special characters and numbers not allowed</p>
+            </div>
+            <div class="w-48 w-r-100">
+                <input type="email" placeholder="Enter Your Email" class="form-control w-100 mb-2 inputs" id="emailInp">
+                <p class="alert alert-danger w-100 d-none" id="emailAlert">Email not valid *exemple@yyy.zzz</p>
+            </div>
+            <div class="w-48 w-r-100">
+                <input type="tel" placeholder="Enter Your Phone Number" class="form-control w-100 mb-2 inputs"
+                    id="phoneInp">
+                <p class="alert alert-danger w-100 d-none" id="phoneAlert">Enter valid Phone Number</p>
+            </div>
+            <div class="w-48 w-r-100">
+                <input type="number" placeholder="Enter Your Age" class="form-control w-100 mb-2 inputs" id="ageInp">
+                <p class="alert alert-danger w-100 d-none" id="ageAlert">Enter valid age be sure you're not under 10
+                    years</p>
+            </div>
+            <div class="w-48 w-r-100">
+                <input type="password" placeholder="Enter Your Password" class="form-control w-100 mb-2 inputs"
+                    id="passInp">
+                <p class="alert alert-danger w-100 d-none" id="passAlert">Enter valid password *Minimum eight
+                    characters, at least one
+                    letter
+                    and one number:*</p>
+            </div>
+            <div class="w-48 w-r-100">
+                <input type="password" placeholder="Enter Your Re-Password" class="form-control w-100 mb-2 inputs"
+                    id="rePassInp">
+                <p class="alert alert-danger w-100 d-none" id="rePassAlert">Your Re-password Not Match The Password</p>
+            </div>
+            <div class="w-100 text-center">
+                <button class="btn btn-danger subBtn" type="button" disabled>Submit</button>
+            </div>
+        </form>
+    </div>
+    <!-- end contact section -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
